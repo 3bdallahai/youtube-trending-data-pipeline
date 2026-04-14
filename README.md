@@ -13,6 +13,7 @@ The pipeline follows this flow:
 
 EventBridge → Lambda → S3 (Raw) → Glue ETL → S3 (Cleansed) → Athena → CloudWatch
 
+![Architecture Diagram](architecture/diagram.png)
 ---
 
 ## ⚙️ Tech Stack
@@ -63,6 +64,8 @@ s3://bucket/
 │
 └── athena-results/
 ```
+
+![Architecture Diagram](architecture/S3_partitioning.png)
 ## 📊 Example Queries
 
 ### Top Trending Videos
